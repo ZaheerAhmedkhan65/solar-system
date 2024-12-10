@@ -31,6 +31,7 @@
             background-color: orangered;
             border-radius: 50%;
             box-shadow: 0 0 5em orangered;
+            z-index: 1;
         }
         .earth,.moon{
             position: absolute;
@@ -92,16 +93,15 @@
         function randomNumber(){
             return Math.floor(Math.random() * 255);
         }
-        console.log(randomNumber());
         let num = randomNumber();
         for(var i=1;i<num;i++){
             let star = document.createElement('div');
+            star.style.position = 'absolute';
             star.style.left = Math.random() * window.innerWidth + 'px';
             star.style.top = Math.random() * window.innerHeight + 'px';
-            star.style.width = Math.random() * 2 + 'px';
-            star.style.height = Math.random() * 2 + 'px';
+            star.style.width = Math.random() * 4 + 'px';
+            star.style.height = Math.random() * 4 + 'px';
             star.style.background = 'white';
-            star.style.position = 'absolute';
             star.style.borderRadius = '50%';
             document.body.appendChild(star);
         }
