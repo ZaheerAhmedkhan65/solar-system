@@ -1,0 +1,184 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+.sun{
+    position: absolute;
+    top: 13em;
+    left: 13em;
+    width: 15em;
+    height: 15em;
+    background-color: orangered;
+    border-radius: 50%;
+    box-shadow: 0 0 5em orangered;
+    z-index: 1;
+}
+.earth,.moon,.mercury,.venus,.mars,.jupitor,.saturn,.uranus,.neptone{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    z-index: 2;
+}
+.mercury{
+    top: 9em;
+    left: 9em;
+    width: 23em;
+    height: 23em;
+    animation: orbit 12s linear infinite;
+}
+.venus{
+    top: 5em;
+    left: 5em;
+    width: 31em;
+    height: 31em;
+    animation: orbit 20s linear infinite;
+}
+.earth{
+    top: 1em;
+    left: 1em;
+    width: 39em;
+    height: 39em;
+    animation: orbit 35s linear infinite;
+}
+.moon{
+    top: 38px;
+    right: 18px;
+    width: 6em;
+    height: 6em;
+    animation: orbit 6s linear infinite;
+}
+.mars{
+    top: -4em;
+    left: -4em;
+    width: 49em;
+    height: 49em;
+    animation: orbit 47s linear infinite;
+}
+.jupitor{
+    top: -9em;
+    left: -9em;
+    width: 60em;
+    height: 60em;
+    animation: orbit 60s linear infinite;
+}
+.saturn{
+    top: -14em;
+    left: -14em;
+    width: 70em;
+    height: 70em;
+    animation: orbit 85s linear infinite;
+}
+.uranus{
+    top: -19em;
+    left: -19em;
+    width: 80em;
+    height: 80em;
+    animation: orbit 120s linear infinite;
+}
+.neptone{
+    top: -24em;
+    left: -24em;
+    width: 90em;
+    height: 90em;
+    animation: orbit 200s linear infinite;
+}
+.earth::before,
+.moon::before,
+.mercury::before,
+.venus::before,
+.mars::before,
+.jupitor::before,
+.saturn::before,
+.uranus::before,
+.neptone::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+.earth::before{
+    top: 5.4em;
+    right: 3.5em;
+    width: 3em;
+    height: 3em;
+    background-image: linear-gradient(to right, rgb(196, 127, 77),green,rgb(57, 156, 156),rgb(57, 156, 156),rgb(196, 127, 77),green);
+}
+.moon::before{
+    top: 0.5em;;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-image: linear-gradient(to right, silver, silver, #333,silver)
+}
+.mercury::before{
+    top: 2.5em;
+    right: 2.8em;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: linear-gradient(to right, rgb(65, 34, 65),silver,silver,silver, rgb(65, 34, 65));
+}
+.venus::before{
+    top: 4.1em;
+    right: 3.7em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: rgba(255, 166, 0, 0.832);
+    background-image: linear-gradient(to right, silver, rgba(132, 108, 62, 0.832),silver, rgba(132, 108, 62, 0.832))
+}
+.mars::before{
+    top: 6.8em;
+    right: 5em;
+    width: 2.5em;
+    height: 2.5em;
+    background-color:rgba(160, 111, 65, 0.586);
+}
+.jupitor::before{
+    top: 7.8em;
+    right: 5em;
+    width: 5.5em;
+    height: 5.5em;
+    background-color:brown;
+    background-image: linear-gradient(to right, rgb(116, 116, 252), rgba(132, 108, 62, 0.832), rgba(132, 108, 62, 0.832), rgb(116, 116, 252), rgba(132, 108, 62, 0.832), rgb(116, 116, 252))
+}
+.saturn::before{
+    top: 9.6em;
+    right: 6em;
+    width: 5.2em;
+    height: 5.2em;
+    background-image: linear-gradient(to right, rgba(132, 108, 62, 0.3), rgba(132, 108, 62, 0.832),rgba(132, 108, 62, 0.3), rgba(132, 108, 62, 0.832),rgba(132, 108, 62, 0.3))
+}
+.uranus::before{
+    top: 7.8em;
+    right: 11em;
+    width: 4.8em;
+    height: 4.8em;
+    background-color: rgb(0, 0, 139);  
+    background-image: linear-gradient(to right,silver, rgb(0, 0, 255),rgb(0, 0, 139), rgb(0, 0, 255),silver);
+}
+.neptone::before{
+    top: 10.8em;
+    right: 10em;
+    width: 5em;
+    height: 5em;
+    background-color: rgb(0, 0, 255);
+    background-image: linear-gradient(to right, rgb(0, 0, 255),rgba(132, 108, 62, 0.607), rgb(0, 0, 255))
+}
+@keyframes orbit{
+    to{
+        transform: rotate(360deg);
+    }
+}
