@@ -35,66 +35,66 @@ body{
     z-index: 2;
 }
 .mercury{
-    top: 9em;
-    left: 9em;
-    width: 23em;
-    height: 23em;
+    top: 10em;
+    left: 10em;
+    width: 21em;
+    height: 21em;
     animation: orbit 12s linear infinite;
 }
 .venus{
-    top: 5em;
-    left: 5em;
-    width: 31em;
-    height: 31em;
+    top: 8em;
+    left: 8em;
+    width: 25em;
+    height: 25em;
     animation: orbit 20s linear infinite;
 }
 .earth{
-    top: 1em;
-    left: 1em;
-    width: 39em;
-    height: 39em;
+    top: 4em;
+    left: 4em;
+    width: 33em;
+    height: 33em;
     animation: orbit 35s linear infinite;
 }
 .moon{
-    top: 38px;
-    right: 18px;
-    width: 6em;
-    height: 6em;
+    top: 24px;
+    right: 24px;
+    width: 5em;
+    height: 5em;
     animation: orbit 6s linear infinite;
 }
 .mars{
-    top: -4em;
-    left: -4em;
-    width: 49em;
-    height: 49em;
+    top: -1em;
+    left: -1em;
+    width: 43em;
+    height: 43em;
     animation: orbit 47s linear infinite;
 }
 .jupitor{
-    top: -9em;
-    left: -9em;
-    width: 60em;
-    height: 60em;
+    top: -6em;
+    left: -6em;
+    width: 53em;
+    height: 53em;
     animation: orbit 60s linear infinite;
 }
 .saturn{
-    top: -14em;
-    left: -14em;
-    width: 70em;
-    height: 70em;
+    top: -11em;
+    left: -11em;
+    width: 63em;
+    height: 63em;
     animation: orbit 85s linear infinite;
 }
 .uranus{
-    top: -19em;
-    left: -19em;
-    width: 80em;
-    height: 80em;
+    top: -16em;
+    left: -16em;
+    width: 73em;
+    height: 73em;
     animation: orbit 120s linear infinite;
 }
 .neptone{
-    top: -24em;
-    left: -24em;
-    width: 90em;
-    height: 90em;
+    top: -21em;
+    left: -21em;
+    width: 83em;
+    height: 83em;
     animation: orbit 200s linear infinite;
 }
 .earth::before,
@@ -111,7 +111,7 @@ body{
     border-radius: 50%;
 }
 .earth::before{
-    top: 5.4em;
+    top: 3.4em;
     right: 3.5em;
     width: 3em;
     height: 3em;
@@ -119,51 +119,51 @@ body{
 }
 .moon::before{
     top: 0.5em;;
-    right: 0.2em;
+    right: -0.2em;
     width: 1.2em;
     height: 1.2em;
     background-image: linear-gradient(to right, silver, silver, #333,silver)
 }
 .mercury::before{
     top: 2.5em;
-    right: 2.8em;
+    right: 2em;
     width: 1.5em;
     height: 1.5em;
     background-image: linear-gradient(to right, rgb(65, 34, 65),silver,silver,silver, rgb(65, 34, 65));
 }
 .venus::before{
-    top: 4.1em;
-    right: 3.7em;
+    top: 3.1em;
+    right: 2.7em;
     width: 1.5em;
     height: 1.5em;
     background-color: rgba(255, 166, 0, 0.832);
     background-image: linear-gradient(to right, silver, rgba(132, 108, 62, 0.832),silver, rgba(132, 108, 62, 0.832))
 }
 .mars::before{
-    top: 6.8em;
-    right: 5em;
+    top: 5.8em;
+    right: 4.3em;
     width: 2.5em;
     height: 2.5em;
     background-color:rgba(160, 111, 65, 0.586);
 }
 .jupitor::before{
-    top: 7.8em;
-    right: 5em;
-    width: 5.5em;
-    height: 5.5em;
+    top: 6.8em;
+    right: 4em;
+    width: 5.2em;
+    height: 5.2em;
     background-color:brown;
     background-image: linear-gradient(to right, rgb(116, 116, 252), rgba(132, 108, 62, 0.832), rgba(132, 108, 62, 0.832), rgb(116, 116, 252), rgba(132, 108, 62, 0.832), rgb(116, 116, 252))
 }
 .saturn::before{
-    top: 9.6em;
+    top: 8.6em;
     right: 6em;
-    width: 5.2em;
-    height: 5.2em;
+    width: 4.2em;
+    height: 4.2em;
     background-image: linear-gradient(to right, rgba(132, 108, 62, 0.3), rgba(132, 108, 62, 0.832),rgba(132, 108, 62, 0.3), rgba(132, 108, 62, 0.832),rgba(132, 108, 62, 0.3))
 }
 .uranus::before{
     top: 7.8em;
-    right: 11em;
+    right: 9em;
     width: 4.8em;
     height: 4.8em;
     background-color: rgb(0, 0, 139);  
@@ -171,7 +171,7 @@ body{
 }
 .neptone::before{
     top: 10.8em;
-    right: 10em;
+    right: 8em;
     width: 5em;
     height: 5em;
     background-color: rgb(0, 0, 255);
