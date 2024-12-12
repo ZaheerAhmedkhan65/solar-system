@@ -25,6 +25,7 @@ body{
     border-radius: 50%;
     box-shadow: 0 0 5em orangered;
     z-index: 1;
+    animation: orbit 4s linear infinite;
 }
 .earth,.moon,.mercury,.venus,.mars,.jupitor,.saturn,.uranus,.neptone{
     position: absolute;
@@ -115,6 +116,7 @@ body{
     right: 3.5em;
     width: 3em;
     height: 3em;
+    animation: orbit 6s linear infinite;
     background-image: linear-gradient(to right, rgb(196, 127, 77),green,rgb(57, 156, 156),rgb(57, 156, 156),rgb(196, 127, 77),green);
 }
 .moon::before{
@@ -122,6 +124,7 @@ body{
     right: -0.2em;
     width: 1.2em;
     height: 1.2em;
+    animation: orbit 6s linear infinite;
     background-image: linear-gradient(to right, silver, silver, #333,silver)
 }
 .mercury::before{
@@ -129,6 +132,7 @@ body{
     right: 2em;
     width: 1.5em;
     height: 1.5em;
+    animation: orbit 6s linear infinite;
     background-image: linear-gradient(to right, rgb(65, 34, 65),silver,silver,silver, rgb(65, 34, 65));
 }
 .venus::before{
@@ -137,6 +141,7 @@ body{
     width: 1.5em;
     height: 1.5em;
     background-color: rgba(255, 166, 0, 0.832);
+    animation: orbit 6s linear infinite;
     background-image: linear-gradient(to right, silver, rgba(132, 108, 62, 0.832),silver, rgba(132, 108, 62, 0.832))
 }
 .mars::before{
@@ -144,7 +149,9 @@ body{
     right: 4.3em;
     width: 2.5em;
     height: 2.5em;
+    animation: orbit 6s linear infinite;
     background-color:rgba(160, 111, 65, 0.586);
+    background-image: linear-gradient(to right, rgba(160, 111, 65, 0.586),rgba(255, 0, 0, 0.721));
 }
 .jupitor::before{
     top: 6.8em;
@@ -152,6 +159,7 @@ body{
     width: 5.2em;
     height: 5.2em;
     background-color:brown;
+    animation: orbit 6s linear infinite;
     background-image: linear-gradient(to right, rgb(116, 116, 252), rgba(132, 108, 62, 0.832), rgba(132, 108, 62, 0.832), rgb(116, 116, 252), rgba(132, 108, 62, 0.832), rgb(116, 116, 252))
 }
 .saturn::before{
@@ -159,6 +167,7 @@ body{
     right: 6em;
     width: 4.2em;
     height: 4.2em;
+    animation: orbit 6s linear infinite;
     background-image: linear-gradient(to right, rgba(132, 108, 62, 0.3), rgba(132, 108, 62, 0.832),rgba(132, 108, 62, 0.3), rgba(132, 108, 62, 0.832),rgba(132, 108, 62, 0.3))
 }
 .uranus::before{
@@ -166,7 +175,8 @@ body{
     right: 9em;
     width: 4.8em;
     height: 4.8em;
-    background-color: rgb(0, 0, 139);  
+    background-color: rgb(0, 0, 139);
+    animation: orbit 6s linear infinite;  
     background-image: linear-gradient(to right,silver, rgb(0, 0, 255),rgb(0, 0, 139), rgb(0, 0, 255),silver);
 }
 .neptone::before{
@@ -175,6 +185,7 @@ body{
     width: 5em;
     height: 5em;
     background-color: rgb(0, 0, 255);
+    animation: orbit 6s linear infinite;
     background-image: linear-gradient(to right, rgb(0, 0, 255),rgba(132, 108, 62, 0.607), rgb(0, 0, 255))
 }
 @keyframes orbit{
